@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lunara · Checkout</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#4A2C40}a:hover{color:#2B1F27}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: #FBF7F2; color: #2B1F27; font-family: 'Poppins', sans-serif; display: flex; flex-direction: column; gap: 14px; padding: 24px 20px 0;">
+
+  <div style="display: flex; align-items: center; gap: 12px;">
+    <a href="Product.dc.html" aria-label="Back" style="width: 44px; height: 44px; flex-shrink: 0; box-sizing: border-box; border-radius: 50%; border: 1px solid #EADFE3; background: #FFFFFF; color: #4A2C40; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
+    <div style="display: flex; flex-direction: column;">
+      <h1 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.2;">Your Bag</h1>
+      <span style="font-size: 12px; color: #6B5E66;">{{itemCount}}</span>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 8px;">
+    <div style="display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: 18px; background: #FFFFFF; border: 1px solid #F0E6E8;">
+      <div aria-hidden="true" style="width: 60px; height: 60px; flex-shrink: 0; border-radius: 14px; background: #F4E1E1; display: flex; align-items: center; justify-content: center;"><svg width="44" height="48" viewBox="0 0 200 220"><path d="M38 42L100 22l62 20" stroke="#8A7A82" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path><path d="M42 40h116l18 156q-26 14-50 4-26 14-52 0-24 10-50-4z" fill="#D8A7A7"></path><path d="M70 46L58 196M100 46v156M130 46l12 150" stroke="rgba(0,0,0,0.13)" stroke-width="5"></path></svg></div>
+      <div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column;">
+        <span style="font-size: 14px; font-weight: 600;">Chiffon Breeze Shawl</span>
+        <span style="font-size: 12px; color: #6B5E66;">Dusty Rose · 180×70cm</span>
+        <span style="font-size: 14px; font-weight: 700; color: #4A2C40;">RM45.00</span>
+      </div>
+      <div style="display: flex; align-items: center; border-radius: 22px; background: #FBF7F2;">
+        <button type="button" onClick="{{dec1}}" aria-label="Decrease quantity" style="width: 40px; height: 44px; border: none; background: transparent; color: #4A2C40; padding: 0; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg></button>
+        <span style="width: 18px; text-align: center; font-size: 14px; font-weight: 600;">{{q1}}</span>
+        <button type="button" onClick="{{inc1}}" aria-label="Increase quantity" style="width: 40px; height: 44px; border: none; background: transparent; color: #4A2C40; padding: 0; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
+      </div>
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: 18px; background: #FFFFFF; border: 1px solid #F0E6E8;">
+      <div aria-hidden="true" style="width: 60px; height: 60px; flex-shrink: 0; border-radius: 14px; background: #E9EDE2; display: flex; align-items: center; justify-content: center;"><svg width="44" height="48" viewBox="0 0 200 220"><path d="M38 42L100 22l62 20" stroke="#8A7A82" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path><path d="M42 40h116l18 156q-26 14-50 4-26 14-52 0-24 10-50-4z" fill="#A3B18A"></path><path d="M70 46L58 196M100 46v156M130 46l12 150" stroke="rgba(0,0,0,0.13)" stroke-width="5"></path></svg></div>
+      <div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column;">
+        <span style="font-size: 14px; font-weight: 600;">Cotton Voile Shawl</span>
+        <span style="font-size: 12px; color: #6B5E66;">Sage · 180×70cm</span>
+        <span style="font-size: 14px; font-weight: 700; color: #4A2C40;">RM39.00</span>
+      </div>
+      <div style="display: flex; align-items: center; border-radius: 22px; background: #FBF7F2;">
+        <button type="button" onClick="{{dec2}}" aria-label="Decrease quantity" style="width: 40px; height: 44px; border: none; background: transparent; color: #4A2C40; padding: 0; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg></button>
+        <span style="width: 18px; text-align: center; font-size: 14px; font-weight: 600;">{{q2}}</span>
+        <button type="button" onClick="{{inc2}}" aria-label="Increase quantity" style="width: 40px; height: 44px; border: none; background: transparent; color: #4A2C40; padding: 0; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 12px; padding: 10px 10px 10px 14px; border-radius: 18px; background: #E8C4C4;">
+    <div aria-hidden="true" style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%; background: #C9A227; display: flex; align-items: center; justify-content: center;">
+      <div style="width: 22px; height: 22px; border-radius: 50%; background: #FBF7F2; display: flex; align-items: center; justify-content: center;"><div style="width: 10px; height: 10px; border-radius: 50%; background: #B03A5B;"></div></div>
+    </div>
+    <div style="flex-grow: 1; display: flex; flex-direction: column;">
+      <span style="font-size: 12px; color: #5A3446;">Complete the look</span>
+      <span style="font-size: 13px; font-weight: 600; color: #4A2C40;">{{upsellText}}</span>
+    </div>
+    <button type="button" onClick="{{toggleBrooch}}" aria-pressed="{{broochPressed}}" style="height: 44px; padding: 0 16px; border-radius: 22px; border: none; background: #4A2C40; color: #FBF7F2; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer;">{{upsellBtn}}</button>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 6px;">
+    <label for="voucher" style="font-size: 12px; font-weight: 600; color: #6B5E66;">Voucher code</label>
+    <div style="display: flex; gap: 8px;">
+      <input id="voucher" type="text" value="{{voucher}}" onChange="{{onVoucher}}" style="flex-grow: 1; min-width: 0; height: 46px; box-sizing: border-box; padding: 0 14px; border-radius: 14px; border: 1.5px dashed #4A2C40; background: #FFFFFF; color: #2B1F27; font-family: inherit; font-size: 14px; font-weight: 600; letter-spacing: 0.06em;">
+      <button type="button" style="height: 46px; padding: 0 18px; border-radius: 14px; border: 1.5px solid #4A2C40; background: #FFFFFF; color: #4A2C40; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer;">Apply</button>
+    </div>
+    <span style="display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; color: {{voucherColor}};"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8L3 12z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg>{{voucherMsg}}</span>
+  </div>
+
+  <div style="padding: 12px 14px; border-radius: 16px; background: #FFFFFF; border: 1px solid #F0E6E8; display: flex; flex-direction: column; gap: 8px;">
+    <span style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A2C40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"></path><circle cx="7" cy="18" r="2"></circle><circle cx="17" cy="18" r="2"></circle></svg>{{shipText}}</span>
+    <div role="progressbar" aria-label="Progress to free shipping" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{pct}}" style="height: 8px; border-radius: 4px; background: #F0E6E8; overflow: hidden;">
+      <div style="height: 8px; border-radius: 4px; background: #4A2C40; width: {{barW}};"></div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 8px;">
+    <span style="font-size: 12px; font-weight: 600; color: #6B5E66;">Pay with</span>
+    <div role="group" aria-label="Payment method" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;">
+      <sc-for list="{{pays}}" as="p" hint-placeholder-count="4">
+        <button type="button" onClick="{{p.pick}}" aria-pressed="{{p.pressed}}" style="height: 46px; padding: 0 10px; border-radius: 14px; border: 2px solid {{p.border}}; background: {{p.bg}}; color: #2B1F27; font-family: inherit; font-size: 12px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px;"><span aria-hidden="true" style="width: 14px; height: 14px; flex-shrink: 0; box-sizing: border-box; border-radius: 50%; border: 2px solid #4A2C40; background: {{p.dot}};"></span>{{p.label}}</button>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 100px; box-sizing: border-box; padding: 14px 20px 24px; background: #FFFFFF; border-top: 1px solid #F0E6E8; display: flex; align-items: center; gap: 14px;">
+    <div style="display: flex; flex-direction: column; min-width: 0;">
+      <span style="font-size: 12px; color: #6B5E66;">Total</span>
+      <span style="font-size: 21px; font-weight: 700; color: #4A2C40; line-height: 1.2;">{{total}}</span>
+      <span style="font-size: 11px; color: #6B5E66;">{{totalNote}}</span>
+    </div>
+    <button type="button" onClick="{{place}}" style="flex-grow: 1; height: 58px; border-radius: 18px; border: none; background: #B03A5B; color: #FFFFFF; font-family: inherit; font-size: 17px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px;">Buy Now<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+  </div>
+
+  <sc-if value="{{placed}}" hint-placeholder-val="{{false}}">
+    <div style="position: absolute; inset: 0; background: rgba(43,31,39,0.55); display: flex; align-items: flex-end;">
+      <div role="dialog" aria-label="Order placed" style="width: 100%; box-sizing: border-box; padding: 28px 24px 32px; border-radius: 28px 28px 0 0; background: #FBF7F2; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center;">
+        <span style="width: 64px; height: 64px; border-radius: 50%; background: #F1E6EC; color: #4A2C40; display: flex; align-items: center; justify-content: center;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+        <h2 style="margin: 0; font-size: 21px; font-weight: 600;">Order placed!</h2>
+        <p style="margin: 0; font-size: 14px; color: #6B5E66;">Your new shawls are on the way. Paid {{total}} with {{payLabel}}.</p>
+        <a href="Reviews.dc.html" style="margin-top: 8px; width: 100%; height: 54px; border-radius: 18px; background: #4A2C40; color: #FBF7F2; font-size: 15px; font-weight: 600; text-decoration: none; display: flex; align-items: center; justify-content: center;">See reviews · earn 50 Lunara Points</a>
+        <button type="button" onClick="{{unplace}}" style="height: 44px; padding: 0 16px; border: none; background: transparent; color: #4A2C40; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer;">Back to bag</button>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+state = { q1: 1, q2: 1, brooch: false, pay: 'fpx', voucher: 'RAYA10', placed: false };
+renderVals() {
+const s = this.state;
+const fmt = (n) => 'RM' + n.toFixed(2);
+const sub = 45 * s.q1 + 39 * s.q2 + (s.brooch ? 13.5 : 0);
+const hasVoucher = s.voucher.trim().toUpperCase() === 'RAYA10';
+const after = Math.max(sub - (hasVoucher ? 10 : 0), 0);
+const free = after >= 80;
+const total = after + (free ? 0 : 4.9);
+const pct = Math.min(100, Math.round((after / 80) * 100));
+const count = s.q1 + s.q2 + (s.brooch ? 1 : 0);
+const payList = [
+{ id: 'fpx', label: 'FPX Online Banking' },
+{ id: 'tng', label: "Touch 'n Go eWallet" },
+{ id: 'duitnow', label: 'DuitNow QR' },
+{ id: 'card', label: 'Credit / Debit Card' }
+];
+const pays = payList.map((p) => {
+const on = p.id === s.pay;
+return {
+...p,
+pressed: on ? 'true' : 'false',
+border: on ? '#4A2C40' : '#EADFE3',
+bg: on ? '#F1E6EC' : '#FFFFFF',
+dot: on ? '#4A2C40' : 'transparent',
+pick: () => this.setState({ pay: p.id })
+};
+});
+return {
+q1: s.q1,
+q2: s.q2,
+inc1: () => this.setState({ q1: s.q1 + 1 }),
+dec1: () => this.setState({ q1: Math.max(1, s.q1 - 1) }),
+inc2: () => this.setState({ q2: s.q2 + 1 }),
+dec2: () => this.setState({ q2: Math.max(1, s.q2 - 1) }),
+itemCount: count + (count === 1 ? ' item' : ' items'),
+upsellText: s.brooch ? 'Magnetic Brooch added · RM13.50' : 'Add Magnetic Brooch · save 10%',
+upsellBtn: s.brooch ? 'Remove' : 'Add',
+broochPressed: s.brooch ? 'true' : 'false',
+toggleBrooch: () => this.setState({ brooch: !s.brooch }),
+voucher: s.voucher,
+onVoucher: (e) => this.setState({ voucher: e.target.value }),
+voucherMsg: hasVoucher ? 'RM10.00 off applied!' : 'Try RAYA10 for RM10 off',
+voucherColor: hasVoucher ? '#4A2C40' : '#6B5E66',
+shipText: free ? "You've unlocked FREE shipping!" : "You're " + fmt(80 - after) + ' away from FREE shipping',
+pct: pct,
+barW: pct + '%',
+pays,
+payLabel: payList.find((p) => p.id === s.pay).label,
+total: fmt(total),
+totalNote: (free ? 'Free shipping' : 'incl. RM4.90 shipping') + (hasVoucher ? ' · RM10 off' : ''),
+placed: s.placed,
+place: () => this.setState({ placed: true }),
+unplace: () => this.setState({ placed: false })
+};
+}
+}
+</script>
+</body>
+</html>

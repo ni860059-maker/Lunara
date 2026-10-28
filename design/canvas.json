@@ -1,0 +1,20 @@
+{
+  "v": 3,
+  "createdOnFiles": { "v": 1, "at": "2026-10-26T09:00:00Z" },
+  "title": "Lunara App Mock-up",
+  "launch": { "view": "canvas" },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": { "x": 0, "y": 0, "w": 390, "h": 844, "title": "1 · Splash", "is_interactive": true, "radius": 36 },
+    "Home.dc.html": { "x": 470, "y": 0, "w": 390, "h": 844, "title": "2 · Home", "is_interactive": true, "radius": 36 },
+    "Product.dc.html": { "x": 940, "y": 0, "w": 390, "h": 844, "title": "3 · Product Details", "is_interactive": true, "radius": 36 },
+    "Checkout.dc.html": { "x": 1410, "y": 0, "w": 390, "h": 844, "title": "4 · Checkout (CTA)", "is_interactive": true, "radius": 36 },
+    "Reviews.dc.html": { "x": 1880, "y": 0, "w": 390, "h": 844, "title": "5 · Reviews", "is_interactive": true, "radius": 36 },
+    "Infographic.dc.html": { "x": 2390, "y": 0, "w": 1080, "h": 5500, "title": "6 · Infographic (export this)" }
+  },
+  "order": ["Main.dc.html", "Home.dc.html", "Product.dc.html", "Checkout.dc.html", "Reviews.dc.html", "Infographic.dc.html"],
+  "notes": {
+    "heading": { "x": 0, "y": -260, "text": "Lunara Shawls · Mobile App UI Mock-up", "kind": "title1", "maxW": 3470 }
+  },
+  "designSystems": []
+}
